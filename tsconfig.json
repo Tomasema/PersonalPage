@@ -22,7 +22,19 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "paths": {
+      // Shared routs
+      "@shared/components": ["src/app/shared/components/index.ts"],
+      "@shared/module": ["src/app/shared/module/index.ts"],
+      "@shared/services": ["src/app/shared/services/index.ts"],
+      "@shared/views":["src/app/shared/views/index.ts"],
+      // Modules
+      // Visitors module.
+      "@modules/components": ["src/app/modules/visitors/components/index.ts"],
+      "@modules/views": ["src/app/modules/views/visitors/index.ts"],
+    
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

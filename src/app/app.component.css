@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/*
+  En esta capa estarán:
+    1. configuraciones disponibles globalmente
+    2. cambios de configuraciones
+    3. colores representativos de la marca o empresa
+*/
+/*
+  Capa base justo despues de las configuraciones
+    1. Estilos a elementos html sin clases
+    2. por lo regular son selectores de etiqueta
+    3. h1-h6, estilos básicos de los links, listas, etc..
+*/
+/*
+  En esta capa estarán:
+    1. herramientas que están disponible globalmente
+    2. funciones utilitarias
+    3. mixins
+*/
+/*
+  Transforma un valor de pixeles a em.
+    @param   {number} $el - el valor en pixeles que se desea convertir.
+    @param   {number} $context - el valor en pixeles del contenedor.
+    @return  {number} el tamaño transformado en em.
+*/
+/*
+  Transforma un valor de pixeles a rem.
+  @param   {number} $el - el valor en pixeles que se desea convertir.
+  @return  {number} el tamaño transformado en rem.
+*/
+/*
+  En esta capa estarán:
+    1. piezas de ui ya diseñadas
+    2. colores, tipografías, branding de la marca o empresa
+    3. exclusivamente se usaran selectores de clases
+*/
+/*
+  En esta capa estarán:
+    1. Estilos que normalizan comportamiento en distintos entornos
+    2. Reset de estilos ejm. normalize css etc..
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/*
+  En esta capa estarán:
+    1. patrones de diseños, elementos reutilizables
+    2. no cosméticos, ni colores, ni tipografías
+    3. exclusivamente se usaran selectores de clase
+*/
+.Spinner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: rgba(82, 181, 115, 0.5);
+  opacity: 0.5;
+}
+
+/* 
+Importación de archivos como módulos mediante la regla " @use ". 
+Mejora el encapsulamiento ya que los miembros de éste solo estarán disponibles 
+dentro del archivo que los está usando,
+a diferencia de @import que tenía un scope global.
+*/
+h1 {
+  color: #fa1100;
+}/*# sourceMappingURL=app.component.css.map */

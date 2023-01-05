@@ -1,0 +1,19 @@
+<div>
+	<div>
+		<button [disabled]="allowNewServer">Add Server</button>
+	</div>
+	<div>
+		<h1>Create un ser aca</h1>
+		<!-- Event type click -->
+		<button (click)="onCreatedServer()">Created server</button>
+		<!-- Interpolation Binding -->
+		<h3>{{ serverCreationStatus }}</h3>
+	</div>
+	<div>
+		<!-- Event Binding -->
+		<label> Server Name </label>
+		<!-- Event type input -->
+		<input placeholder="introduce your data" type="text" (input)="onUpdateServerName($event)" />
+		<p>{{ serverName }}</p>
+	</div>
+</div>
